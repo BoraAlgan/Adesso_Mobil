@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+
+    <TextView
+        android:id="@+id/textview41"
+        android:layout_width="277dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="85dp"
+        android:gravity="center"
+        android:text="Kimliğinizi Doğrulamaya Başlıyoruz Adessi!"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textview44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:text="Düzenli İnternet Bağlantısı"
+        android:textColor="@color/silver"
+        app:layout_constraintStart_toEndOf="@+id/imageView42"
+        app:layout_constraintTop_toBottomOf="@+id/textview43" />
+
+    <TextView
+        android:id="@+id/textview43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Yeni Kimlik Kartı"
+        android:textColor="@color/silver"
+        app:layout_constraintStart_toEndOf="@+id/imageView41"
+        app:layout_constraintTop_toBottomOf="@+id/textview42" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview42"
+        app:srcCompat="@drawable/id_card" />
+
+    <TextView
+        android:id="@+id/textview45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:text="Kamerası Çalışan Bir Telefon"
+        android:textColor="@color/silver"
+        app:layout_constraintStart_toEndOf="@+id/imageView43"
+        app:layout_constraintTop_toBottomOf="@+id/textview44" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView42"
+        app:srcCompat="@drawable/camera" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView41"
+        app:srcCompat="@drawable/wifi" />
+
+    <Button
+        android:id="@+id/button41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="43dp"
+        android:text="BAŞLA!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview45" />
+
+    <TextView
+        android:id="@+id/textview42"
+        android:layout_width="366dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Dijital doğrulama için yeni T.C. kimlik kartının yanında olmalı. Ayrıca hiç merak etme, çok zamanını almayacağız."
+        android:textColor="@color/silver"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview41" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/face_scan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

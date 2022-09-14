@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textview21"
+        android:layout_width="413dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="70dp"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/buttons"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="110dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.camera.view.PreviewView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/takePhotoBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_baseline_add_a_photo_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/switchCameraBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="57dp"
+            android:background="@drawable/ic_baseline_flip_camera_ios_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button21"
+            app:layout_constraintStart_toEndOf="@+id/takePhotoBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.428" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button21"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/mybutton"
+            android:text="Geç"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/capturedImageView"
+        android:layout_width="94dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraPreview"
+        app:srcCompat="@drawable/bg_border_white" />
+
+    <ImageView
+        android:id="@+id/capturedImageView2"
+        android:layout_width="94dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraPreview"
+        app:srcCompat="@drawable/bg_border_white" />
+
+    <ImageView
+        android:id="@+id/imageview21"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/close"
+        app:layout_constraintEnd_toStartOf="@+id/capturedImageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/capturedImageView"
+        app:layout_constraintTop_toBottomOf="@+id/cameraPreview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

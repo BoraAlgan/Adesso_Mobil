@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="453dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button11"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="162dp"
+        android:background="@drawable/mybutton"
+        android:text="GEÇ"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/textview11"
+        android:layout_width="277dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="85dp"
+        android:gravity="center"
+        android:text="Başvuru için senden kimlik bilgilerini almamız gerekiyor."
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiy11"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:hint="İsim"
+        app:boxStrokeColor="@color/ablue"
+        app:endIconMode="clear_text"
+        app:helperText="Gerekli / 8-20 karakter, __ , _. , ._ , .. içinde bulunamaz"
+        app:helperTextTextColor="@color/silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview11"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiy12"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="TCKN"
+        app:boxStrokeColor="@color/ablue"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:endIconMode="clear_text"
+        app:helperText="Gerekli"
+        app:helperTextTextColor="@color/silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiy11"
+        app:startIconDrawable="@drawable/ic_baseline_credit_card_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiy13"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Doğum Tarihi"
+        app:boxStrokeColor="@color/ablue"
+        app:endIconMode="clear_text"
+        app:helperText="Gerekli / 13.08.1987, 13/08/1987, 13-08-1987"
+        app:helperTextTextColor="@color/silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiy12"
+        app:startIconDrawable="@drawable/ic_baseline_cake_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiy14"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Cep Telefonu"
+        app:boxStrokeColor="@color/ablue"
+        app:endIconMode="clear_text"
+        app:helperText="Gerekli / 10 karakter"
+        app:helperTextTextColor="@color/silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiy13"
+        app:prefixText="+90"
+        app:prefixTextColor="@color/ablue"
+        app:startIconDrawable="@drawable/ic_baseline_local_phone_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="176dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/face_recognition" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="106dp"
+        android:text="Kullanıcı bilgilerimin Akbank ile paylaşımını onaylıyorum."
+        android:textColor="@color/silver"
+        android:textSize="10dp"
+        app:buttonTint="@color/ablue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiy14">
+
+    </androidx.appcompat.widget.AppCompatCheckBox>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

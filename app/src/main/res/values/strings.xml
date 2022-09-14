@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bora</string>
+    <string name="id">Id</string>
+    <string name="password">Password</string>
+    <string name="validation_code">Validation Code</string>
+    <string name="g_mail">G Mail</string>
+</resources>
